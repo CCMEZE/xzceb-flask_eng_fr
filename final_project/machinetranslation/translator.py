@@ -49,10 +49,3 @@ def french_to_english(french_text=None):
         model_id='fr-en').get_result()['translations'][0]['translation']
     return english_text
 
-
-def run_test():
-    """run the test case"""
-    print(english_to_french('Hello'))
-    print(french_to_english('Bonjour'))
-if __name__ == '__main__':
-    run_test()
